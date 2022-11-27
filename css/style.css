@@ -202,6 +202,10 @@ ul li {
   margin: 5px;
 }
 
+.product:hover {
+  background-color: #505050;
+}
+
 .recommended-group, .comming-soon-group {
   display: flex;
   flex-direction: row;
@@ -512,6 +516,66 @@ ul li {
     font-size: 24px;
   }
 }
+.news {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+  }
+  .news h2 {
+    margin: 20px;
+    font-size: 40px;
+  }
+  .news .news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: normal;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+  .news .news-container .new-link {
+    margin: 15px, 5px, 5px, 15px;
+  }
+  .news .news-container .new-link .new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: normal;
+    flex-wrap: nowrap;
+  }
+  .news .news-container .new-link .new img {
+    width: 92px;
+    height: 92px;
+    margin: 5px;
+    margin-right: 10px;
+  }
+  .news .news-container .new-link .new .new-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+  .news .news-container .new-link .new .new-text h3 {
+    font-size: 18px;
+  }
+  .news .news-container .new-link .new .new-text p {
+    font-size: 10px;
+  }
+  .news .news-container .new-link .new:hover {
+    background-color: #505050;
+  }
+}
 footer {
   grid-area: footer;
   width: 100vw;
@@ -669,25 +733,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.news {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .news .news {
-    grid-area: news;
-    display: flex;
-    flex-direction: row;
-    align-items: normal;
-    justify-content: center;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: center;
-  }
-  .news .news h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 24px;
-  }
 }/*# sourceMappingURL=style.css.map */

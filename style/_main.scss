@@ -27,6 +27,10 @@
     }
 }
 
+.product:hover{
+    background-color: $secondaryColor
+}
+
 .recommended-group, .comming-soon-group{
     @include flex-set(row, center, space-evenly, wrap);
     width: 100vw;

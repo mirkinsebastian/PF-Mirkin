@@ -3,6 +3,7 @@
 @import "nav";
 @import "main";
 @import "categories";
+@import "news";
 @import "footer";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
@@ -50,20 +51,3 @@ a{
     text-decoration: none;
 }
 
-.news{
-    display: none;
-    @include media-up(desktop){
-        .news{
-            grid-area: news;
-            @include flex-set(row, normal, center, nowrap);
-            display: flex;
-            justify-content: center;
-        }
-    
-        .news h2{
-            margin-top: 30px;
-            margin-bottom: 30px;
-            font-size: 24px;
-        }
-    }
-}

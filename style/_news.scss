@@ -1,0 +1,41 @@
+.news{
+    display: none;
+}
+@include media-up(desktop){
+    .news{
+        @include flex-set(column, center, normal, nowrap);
+        @include size(100%, 100%);
+        h2{
+            margin: 20px;
+            font-size: 40px;
+        }
+        .news-container{
+            @include flex-set(column, flex-start, normal, nowrap);
+            margin-left: 10px;
+            margin-right: 40px;
+            .new-link{
+                margin: 15px, 5px, 5px, 15px;
+                .new{
+                    @include flex-set(row, center, normal, nowrap);
+                    img{
+                        @include size(92px,92px);
+                        margin: 5px;
+                        margin-right: 10px;
+                    }
+                    .new-text{
+                        @include flex-set(column, flex-start, space-evenly, nowrap);
+                        h3{
+                            font-size: 18px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .new:hover{
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+    }    
+}
